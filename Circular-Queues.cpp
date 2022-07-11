@@ -18,3 +18,15 @@ void CircularDequeue(struct queue *q){
     }
     return x;
 }
+
+int main()
+{
+    struct queue q;
+    cout<<"Type in the size of queue"<<endl;
+    cin>>q.size;
+    q.front=q.rear=-1;
+    int Q= new int[q.size];
+    CircularEnqueue(&q,21);
+    CircularEnqueue(&q,323);
+    return -1;
+}
